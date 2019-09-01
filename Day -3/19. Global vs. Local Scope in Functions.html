@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1>Basic JavaScript: Global vs. Local Scope in Functions</h1>
+<p>It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.</p>
+<p>In this example:</p>
+
+<p>
+  var someVar = "Hat";<br>
+  function myFun() { <br>
+    var someVar = "Head";<br>
+    return someVar;<br>
+  }
+  <br>
+  The function myFun will return "Head" because the local version of the variable is present.
+
+
+</p>
+
+
+
+
+    <script type="text/javascript">
+      // Setup
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+  var myOutfit = "sweater";
+    return myOutfit;
+
+  // Only change code above this line
+  return outerWear;
+
+}
+
+myOutfit();
+    </script>
+  </body>
+</html>

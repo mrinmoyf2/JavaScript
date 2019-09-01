@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <h1>Comparison with the Strict Inequality Operator</h1>
+    <p>
+      The strict inequality operator "(!==)" is the logical opposite of the strict equality operator. It means "Strictly Not Equal" and returns false where strict equality would return true and vice versa. Strict inequality will not convert data types.
+  <br>
+      Examples
+<br>
+      3 !== 3 // false <br>
+      3 !== '3' // true <br>
+      4 !== 3 // true
+
+  </p>
+<p>Add the strict inequality operator to the if statement so the function will return "Not Equal" when val is not strictly equal to 17:</p>
+
+    <script type="text/javascript">
+      // Setup
+function testStrictNotEqual(val) {
+  // Only Change Code Below this Line
+
+  if (val !== 17) {
+
+  // Only Change Code Above this Line
+
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+// Change this value to test
+testStrictNotEqual(12);
+console.log(testStrictNotEqual());
+    </script>
+  </body>
+</html>

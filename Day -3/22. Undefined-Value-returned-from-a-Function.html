@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>Understanding Undefined Value returned from a Function</h1>
+  <p>A function with no return statement, has an output of undefined. So, if you try to equal a varaible to the output of a function with no return statement, that variable will equal undefined.</p>
+  <br>
+
+
+
+  <script type="text/javascript">
+    // Example
+    var sum = 0;
+
+    function addThree() {
+      sum = sum + 3;
+    }
+
+    // Only change code below this line
+
+    var sum = 8;
+
+    function addFive() {
+      sum = sum + 5;
+
+
+    }
+
+
+    // Only change code above this line
+    var returnedValue = addFive();
+  </script>
+</body>
+
+</html>

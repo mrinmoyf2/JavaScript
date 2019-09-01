@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css">
+    .code {
+      color: #099388;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Use Conditional Logic with If Statements</h1>
+  <p>If statements are used to make decisions in code. The keyword if tells JavaScript to execute the code in the curly braces under certain conditions, defined in the parentheses. These conditions are known as Boolean conditions and they may only be
+    true or false.</p>
+  <br>
+  <p>When the condition evaluates to true, the program executes the statement inside the curly braces. When the Boolean condition evaluates to false, the statement inside the curly braces will not execute.</p>
+  <br>
+  <h3>Pseudocode</h3>
+  <p class="code">
+    if (condition is true) {<br>
+    statement is executed
+    }
+  </p>
+  <p>Example</p>
+  <p class="code">
+    function test (myCondition) { <br>
+    if (myCondition) { <br>
+    return "It was true"; <br>
+    }<br>
+    return "It was false";<br>
+    }<br>
+    test(true); // returns "It was true" <br>
+    test(false); // returns "It was false" <br>
+  </p>
+
+  <p>When test is called with a value of true, the if statement evaluates myCondition to see if it is true or not. Since it is true, the function returns "It was true". When we call test with a value of false, myCondition is not true and the
+    statement in the curly braces is not executed and the function returns "It was false".</p>
+
+
+  <br>
+  <p>Click the button to display a time-based greeting:</p>
+
+  <button onclick="myFunction()">Try it</button>
+
+  <p id="demo"></p>
+
+  <script type="text/javascript">
+    // Example
+    function ourTrueOrFalse(isItTrue) {
+      if (isItTrue) {
+        return "Yes, it's true";
+      }
+      return "No, it's false";
+    }
+
+    // Setup
+    function trueOrFalse(wasThatTrue) {
+
+      // Only change code below this line.
+      if (wasThatTrue) {
+        return "Yes, that was true";
+      }
+      return "No, that was false";
+      // Only change code above this line.
+
+    }
+
+    // Change this value to test
+    trueOrFalse(true);
+
+
+    function myFunction() {
+      var hour = new Date().getHours();
+      var greeting;
+      if (hour < 18) {
+        greeting = "Good day";
+      } else {
+        greeting = "Good evening";
+      }
+      document.getElementById("demo").innerHTML = greeting;
+    }
+  </script>
+</body>
+
+</html>

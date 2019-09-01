@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>Stand in Line</h1>
+
+
+
+  <h2>Hint: 1</h2>
+  <p>The push() method adds an item to the end of an array.
+
+  </p>
+
+  <h2>Hint: 2</h2>
+
+  <p>The shift() method removes the first element of an array. It also returns the element removed.
+  </p>
+
+  <h2>Hint: 3</h2>
+  <p>The function nextInLine uses arr and item. Those are what the tests will use to pass the array elements they will test with. It allows the function to be reusable. Do not hardcode any of the tests inside the function.
+  </p>
+
+<h2>Basic Code Solution:</h2>
+
+<p>function nextInLine(arr, item) {<br>
+
+  arr.push(item);<br>
+  var removed = arr.shift();<br>
+  return removed;  <br>
+}</p>
+
+
+  <script type="text/javascript">
+    function nextInLine(arr, item) {
+      // Your code here
+      arr.push(item);
+      var item = arr.shift();
+
+      return item; // Change this line
+    }
+
+    // Test Setup
+    var testArr = [1, 2, 3, 4, 5];
+
+    // Display Code
+    console.log("Before: " + JSON.stringify(testArr));
+    console.log(nextInLine(testArr, 6)); // Modify this line to test
+    console.log("After: " + JSON.stringify(testArr));
+  </script>
+</body>
+
+</html>

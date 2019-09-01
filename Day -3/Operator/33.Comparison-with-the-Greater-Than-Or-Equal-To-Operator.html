@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Comparison with the Greater Than Or Equal To Operator</h1>
+<p>
+  The greater than or equal to operator (>=) compares the values of two numbers. If the number to the left is greater than or equal to the number to the right, it returns true. Otherwise, it returns false.
+<br>
+Like the equality operator, greater than or equal to operator will convert data types while comparing.
+<br>
+Examples
+<br>
+6 >= 6 // true <br>
+7 >= '3' // true <br>
+2 >= 3 // false <br>
+'7' >= 9 // false
+</p>
+
+    <script type="text/javascript">
+      function testGreaterOrEqual(val) {
+  if (val >= 20) {  // Change this line
+    return "20 or Over";
+  }
+
+  if (val >= 10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+// Change this value to test
+testGreaterOrEqual(0);
+console.log(testGreaterOrEqual());
+    </script>
+  </body>
+</html>
